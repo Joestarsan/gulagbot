@@ -20,22 +20,22 @@ def handle_message(message):
     bot.reply_to(message, pidor)
 
 @bot.message_handler(regexp='Украина|хохол|свинья')
-def handle_message(message):
+def handle_message1(message):
     kakol = random.choice(list1)
     bot.reply_to(message, kakol)
 
 @bot.message_handler(regexp='Maxim|Максим|Макс')
-def handle_message(message):
+def handle_message2(message):
     makc = random.choice(list2)
     bot.reply_to(message, makc)
 
 @bot.message_handler(regexp='сквад|врыв')
-def handle_message(message):
+def handle_message3(message):
     squad = random.choice(list3)
     bot.reply_to(message, squad)
 
 @bot.message_handler(regexp='Выкупай|Викупай|Выкупаешь|Выкупает|Викупае')
-def handle_message1(message):
+def handle_message4(message):
     bot.send_sticker(message.chat.id, "CAACAgIAAxkBAAICOmDYagK4AVfvPsRw0mr7GNDSfsrhAAI2AQACtIBKJPF7rPZ3U6XHIAQ")
 
 bot.polling()
